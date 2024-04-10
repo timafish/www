@@ -1,0 +1,571 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap");
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1.2;
+  color: #102746;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+figure {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+.wrapper {
+  max-width: 1060px;
+  margin: 0 auto;
+}
+
+.wrapper-full {
+  max-width: 1262px;
+  margin: 0 auto;
+}
+
+ul li {
+  list-style-type: none;
+}
+
+.section-title {
+  font-weight: 500;
+  font-size: 35px;
+  line-height: 42px;
+  position: relative;
+  padding-bottom: 10px;
+}
+
+.section-title::after {
+  content: "";
+  display: block;
+  width: 253px;
+  height: 3px;
+  background-color: #006dfe;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+/* Header styles start */
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  transition: .2s ease;
+  padding-bottom: 20px;
+  z-index: 999;
+}
+
+.head_active {
+  background-color: #0E1D28;
+}
+
+.head_wrap {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  padding-top: 62px;
+}
+
+.head_list {
+  display: flex;
+}
+
+.head_item {
+  margin-right: 82px;
+}
+
+.head_item:last-child {
+  margin-right: 0;
+}
+
+.head_link {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+  color: #fff;
+  text-decoration: none;
+  list-style-type: none;
+}
+
+.head_link:hover,
+.head_link:active,
+.head_link:focus {
+  opacity: 0.75;
+}
+
+/* Header styles end */
+
+/* Intro styles start */
+
+.intro {
+  min-height: 100vh;
+  background: url(../img/Hero.png) no-repeat center;
+  background-size: cover;
+  padding-top: 263px;
+  padding-bottom: 283px;
+}
+
+.intro_title {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 50px;
+  line-height: 60px;
+  color: #ffffff;
+  width: 619px;
+  margin-bottom: 22px;
+}
+
+.subtitle {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #fff;
+  width: 546px;
+  margin-bottom: 59px;
+}
+
+.search-form-info {
+  display: flex;
+}
+
+.search-form-field {
+  width: 297px;
+  background: transparent url(../img/oval.png) no-repeat left 7px;
+  background-size: 20px;
+  border: 0;
+  border-bottom: 2px solid #bfc0c5;
+  margin-right: 60px;
+  padding-left: 43px;
+  padding-bottom: 22px;
+  font-weight: 500;
+  font-size: 18px;
+  color: #ffffff;
+}
+
+.search-form-field::placeholder {
+  font-weight: 500;
+  font-size: 18px;
+  color: #ffffff;
+}
+
+.search-form-submit {
+  padding: 15px 39px;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 29px;
+  color: #fff;
+  background: #1b7dff;
+  border: none;
+  cursor: pointer;
+}
+
+.search-form-submit:hover,
+.search-form-submit:focus,
+.search-form-submit:active {
+  background-color: #0d68e2;
+}
+
+.search-form-wrap {
+  border: 0;
+}
+
+/* Intro styles start */
+
+/* Benefits styles start */
+
+.benefits {
+  margin-bottom: 131px;
+}
+
+.benefits_title {
+  width: 100%;
+  font-weight: 500;
+  font-size: 35px;
+  line-height: 42px;
+  padding: 93px 100px 88px 100px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translateY(-100%);
+  background: #fff;
+}
+
+.benefits_wrap {
+  max-width: 1262px;
+  background: #fff;
+  margin: 0 auto;
+  box-shadow: 0px 2px 20px rgba(21, 24, 36, 0.15993);
+  position: relative;
+}
+
+.benefits_cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 55px;
+  padding: 0 100px;
+}
+
+.benefits_card {
+  grid-column: span 1;
+  margin-bottom: 112px;
+}
+
+.benefits-card-pic {
+  max-width: 66px;
+  margin-bottom: 37px;
+  position: relative;
+  z-index: 1;
+}
+
+.benefits-card-thumb {
+  display: block;
+}
+
+.benefits-card-title {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+  margin-bottom: 26px;
+}
+
+.benefits-card-desc {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  margin-bottom: 39px;
+}
+
+.benefits-card-more {
+  display: inline-block;
+  padding-right: 59px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #006dfe;
+  background: url(../img/shape.png) no-repeat 95% center;
+  transition: all 0.2s linear;
+}
+
+.benefits-card-more:hover,
+.benefits-card-more:focus {
+  background: url(../img/shape.png) no-repeat right center;
+}
+
+/* Benefits styles end */
+
+/* Places styles start */
+
+.places {
+  margin-bottom: 131px;
+}
+
+.places-title {
+  margin-right: 15px;
+}
+
+.places-action {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 36px;
+}
+
+.places-view-all {
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  padding-right: 59px;
+  color: #006dfe;
+  background: url(../img/shape.png) no-repeat 95% center;
+  transition: all 0.2s linear;
+}
+
+.places-view-all:hover,
+.places-view-all:focus {
+  background: url(../img/shape.png) no-repeat right center;
+}
+
+.places-cards {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-gap: 10px;
+}
+
+.places-card {
+  position: relative;
+  overflow: hidden;
+}
+
+.places-card::after {
+  display: block;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: rgba(21, 24, 36, 0.4);
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.places-card:hover .places-card-pic {
+  transform: scale(1.05);
+}
+
+.places-card-title {
+  font-weight: 700;
+  font-size: 50px;
+  color: #fff;
+  position: absolute;
+  bottom: 27px;
+  left: 29px;
+  z-index: 1;
+}
+
+.places-card-size-lg {
+  grid-column: span 3;
+}
+
+.places-card-size-sm {
+  grid-column: span 2;
+}
+
+.places-card-pic {
+  width: 100%;
+  transition: all 0.55s ease;
+}
+
+.places-card-size-lg {
+  height: 354px;
+}
+
+.places-card-size-sm {
+  height: 283px;
+}
+
+.places-card-link {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 2;
+}
+
+.tours-title {
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 40px;
+  color: #102746;
+  margin-bottom: 85px;
+}
+
+.tours-subtitle {
+  width: 519px;
+  font-weight: 400;
+  font-size: 16px;
+  color: #102746;
+  margin-bottom: 58px;
+}
+
+/* Places styles end */
+
+/* Tours styles start */
+
+.tours-tottori {
+  display: flex;
+}
+
+.tours-arashiyama {
+  display: flex;
+}
+
+.tours-tottori-pic {
+  margin-right: 108px;
+  margin-bottom: 103px;
+}
+
+.tours-arashiyama-pic {
+  width: 597px;
+  height: 354px;
+}
+
+.arashiyama-content {
+  margin-bottom: 104px;
+  margin-right: 97px;
+  margin-left: 66px;
+}
+
+.tours-view-more {
+  display: inline-block;
+  padding-right: 59px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #006dfe;
+  background: url(../img/shape.png) no-repeat 95% center;
+  transition: all 0.2s linear;
+}
+
+.tours-view-more:hover,
+.tours-view-more:focus {
+  background: url(../img/shape.png) no-repeat right center;
+}
+
+/* Tours styles end */
+
+/* Top styles start */
+
+.top {
+  margin-bottom: 86px;
+}
+
+.top-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 57px;
+}
+
+.top-title {
+  margin-bottom: 54px;
+}
+
+.top-card-pic {
+  position: relative;
+  margin-bottom: 45px;
+}
+
+.top-card-stats {
+  width: 386px;
+  height: 55px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin-bottom: 3px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: rgba(21, 24, 36, 0.6);
+  padding-right: 25px;
+}
+
+.top-card-title {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+  color: #fff;
+}
+
+.top-card-likes {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #fff;
+  padding-right: 20px;
+  margin-left: 157px;
+  background: url(../img/heart.png) no-repeat right;
+}
+
+.top-card-comments {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #fff;
+  padding-left: 14px;
+  padding-right: 23px;
+  background: url(/img/com.png) no-repeat right;
+}
+
+.top-card-desc {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  margin-bottom: 31px;
+}
+
+.top-card-button {
+  padding: 11px 19px 11px 19px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #fff;
+  background: #1b7dff;
+  border: none;
+  cursor: pointer;
+}
+
+.top-card-button:hover,
+.top-card-button:focus,
+.top-card-button:active {
+  background-color: #0d68e2;
+}
+
+/* Top styles end */
+
+/* Video styles start */
+
+.video {
+  width: 100%;
+}
+
+.video-wrapper {
+  min-width: 1440px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.video-item {
+  padding-top: 56.25%;
+}
+
+.video-element {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* Video styles end */
+
+/* Footer styles start */
+
+.footer {
+  background: #0E1D28;
+  padding: 119px 0;
+}
+
+.footer__menu-link {
+  color: #fff;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+/* Footer styles end */ 
